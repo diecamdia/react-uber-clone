@@ -3,5 +3,11 @@
     "source.fixAll": "explicit",
     "source.organizeImports": "explicit",
     "source.sortMembers": "explicit"
-  }
+  },
+  "a-file-icon-vscode.activeIconPacks": [
+    "react"
+  ],
+  "a-file-icon-vscode.arrowTheme": "material",
+  "a-file-icon-vscode.folderColor": "#607d8b",
+  "a-file-icon-vscode.folderTheme": "specific"
 }

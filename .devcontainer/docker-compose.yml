@@ -1,0 +1,21 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+       - ../..:/workspaces:cached
+    command: sleep infinity
+    
+  android:
+    image: budtmo/docker-android:emulator_13.0
+    container_name: android-container
+    ports:
+      - 6080:6080
+      - 5554:5554
+      - 5555:5555
+    environment:
+      - EMULATOR_DEVICE=Samsung Galaxy S10
+      - WEB_VNC=true
+    devices:
+      - /dev/kvm
